@@ -13,63 +13,66 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
-            color: #333;
+            color: #334155;
         }
 
         .container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 600px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+            max-width: 580px;
             width: 100%;
             padding: 40px;
             text-align: center;
         }
 
         .app-icon {
-            width: 120px;
-            height: 120px;
-            border-radius: 25px;
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
             margin: 0 auto 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            background: #f0f0f0;
+            background: #e0e7ff;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 48px;
+            color: #4338ca;
         }
 
         h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-            color: #222;
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #0f172a;
         }
 
         .subtitle {
-            color: #666;
-            font-size: 16px;
-            margin-bottom: 30px;
+            color: #64748b;
+            font-size: 15px;
+            margin-bottom: 24px;
+            line-height: 1.5;
         }
 
         .app-info {
-            background: #f8f9fa;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
             border-radius: 12px;
-            padding: 20px;
-            margin: 30px 0;
+            padding: 16px 20px;
+            margin: 24px 0;
             text-align: left;
         }
 
         .info-row {
             display: flex;
             justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #e0e0e0;
+            padding: 8px 0;
+            border-bottom: 1px solid #edf2f7;
+            font-size: 14px;
         }
 
         .info-row:last-child {
@@ -78,79 +81,85 @@
 
         .info-label {
             font-weight: 600;
-            color: #555;
+            color: #475569;
         }
 
         .info-value {
-            color: #333;
+            color: #0f172a;
         }
 
         .download-btn {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 18px 40px;
-            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #2563eb;
+            color: #ffffff;
+            padding: 14px 32px;
+            border-radius: 10px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
-            margin: 20px 0;
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
-            transition: transform 0.2s, box-shadow 0.2s;
+            margin: 10px 0 24px;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+            transition: background 0.2s, transform 0.1s;
         }
 
         .download-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.5);
-        }
-
-        .download-btn:active {
-            transform: translateY(0);
+            background: #1d4ed8;
+            transform: translateY(-1px);
         }
 
         .instructions {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 8px;
             text-align: left;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
         }
 
         .instructions h3 {
-            color: #856404;
-            margin-bottom: 15px;
-            font-size: 18px;
+            font-size: 16px;
+            color: #0f172a;
+            margin-bottom: 12px;
+            font-weight: 600;
         }
 
         .instructions ol {
-            margin-left: 20px;
-            color: #856404;
-        }
-
-        .instructions li {
-            margin: 10px 0;
+            padding-left: 20px;
+            color: #475569;
+            font-size: 14px;
             line-height: 1.6;
         }
 
+        .instructions li {
+            margin-bottom: 6px;
+        }
+
         .warning {
-            background: #f8d7da;
-            border-left: 4px solid #dc3545;
-            padding: 15px;
-            margin: 20px 0;
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 4px solid #f59e0b;
             border-radius: 8px;
-            color: #721c24;
-            font-size: 14px;
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            color: #92400e;
+            margin-bottom: 20px;
+            line-height: 1.5;
         }
 
         .features {
             text-align: left;
-            margin: 30px 0;
+            margin-bottom: 24px;
         }
 
         .features h3 {
-            margin-bottom: 15px;
-            color: #333;
+            font-size: 16px;
+            color: #0f172a;
+            margin-bottom: 12px;
+            font-weight: 600;
         }
 
         .features ul {
@@ -159,70 +168,60 @@
         }
 
         .features li {
-            padding: 8px 0;
-            padding-left: 25px;
+            padding: 6px 0;
+            padding-left: 24px;
             position: relative;
-            color: #555;
+            color: #475569;
+            font-size: 14px;
         }
 
         .features li:before {
-            content: "✓";
+            content: "•";
             position: absolute;
-            left: 0;
-            color: #28a745;
-            font-weight: bold;
+            left: 8px;
+            color: #2563eb;
             font-size: 18px;
+            line-height: 1;
         }
 
         .footer {
-            margin-top: 40px;
+            margin-top: 30px;
             padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            color: #999;
-            font-size: 14px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 13px;
         }
 
-        .qr-code {
-            margin: 20px 0;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 12px;
+        .footer a {
+            color: #2563eb;
+            text-decoration: none;
         }
 
-        .qr-placeholder {
-            width: 200px;
-            height: 200px;
-            margin: 0 auto;
-            background: #e0e0e0;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 14px;
+        .footer a:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: 600px) {
             .container {
-                padding: 30px 20px;
+                padding: 24px 16px;
             }
 
             h1 {
-                font-size: 24px;
-            }
-
-            .app-icon {
-                width: 100px;
-                height: 100px;
+                font-size: 22px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="app-icon">📱</div>
+        <div class="app-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+        </div>
         <h1>HOPA School Reports</h1>
-        <p class="subtitle">Complete offline solution for managing student academic records</p>
+        <p class="subtitle">Complete offline academic records and terminal report management system for Android</p>
 
         <div class="app-info">
             <div class="info-row">
@@ -231,64 +230,61 @@
             </div>
             <div class="info-row">
                 <span class="info-label">Platform:</span>
-                <span class="info-value">Android</span>
+                <span class="info-value">Android 7.0+</span>
             </div>
             <div class="info-row">
-                <span class="info-label">Size:</span>
+                <span class="info-label">Package Size:</span>
                 <span class="info-value">~15 MB</span>
             </div>
             <div class="info-row">
-                <span class="info-value">Offline-First App</span>
+                <span class="info-label">Architecture:</span>
+                <span class="info-value">Offline-First Local Storage</span>
             </div>
         </div>
 
         <a href="https://expo.dev/artifacts/eas/kh5SytVGoa2x6EgZtQC7ya.apk" 
            class="download-btn" 
            download="HOPA-School-Reports-v1.0.0.apk">
-            📥 Download APK
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download APK
         </a>
 
         <div class="instructions">
-            <h3>📋 Installation Instructions</h3>
+            <h3>Installation Instructions</h3>
             <ol>
-                <li>Download the APK file using the button above</li>
-                <li>On your Android device, go to <strong>Settings</strong></li>
-                <li>Find <strong>"Security"</strong> or <strong>"Privacy"</strong> settings</li>
-                <li>Enable <strong>"Install from Unknown Sources"</strong> or <strong>"Allow from this source"</strong></li>
-                <li>Open the downloaded APK file</li>
-                <li>Tap <strong>"Install"</strong> when prompted</li>
-                <li>Wait for installation to complete</li>
-                <li>Tap <strong>"Open"</strong> to launch the app</li>
+                <li>Download the APK file using the button above.</li>
+                <li>On your Android device, go to <strong>Settings &gt; Security</strong>.</li>
+                <li>Enable <strong>Install from Unknown Sources</strong> or allow browser installation permission.</li>
+                <li>Open the downloaded APK from your notifications or Downloads folder.</li>
+                <li>Follow the on-screen prompts to complete installation.</li>
             </ol>
         </div>
 
         <div class="warning">
-            <strong>⚠️ Note:</strong> You may see a warning about installing from unknown sources. This is normal for apps not from Google Play Store. The app is safe and secure.
+            <strong>System Notice:</strong> Because this package is distributed directly outside Google Play, Android may present an unknown source confirmation prompt. The package is cryptographically signed and safe to install.
         </div>
 
         <div class="features">
-            <h3>✨ Key Features</h3>
+            <h3>Key Capabilities</h3>
             <ul>
-                <li>100% Offline - Works without internet</li>
-                <li>Secure Data Storage - All data stored locally</li>
-                <li>Student Management - Complete student records</li>
-                <li>Report Generation - Professional report cards</li>
-                <li>Academic Tracking - Track student performance</li>
-                <li>Data Backup - Export and backup your data</li>
+                <li>100% Offline Capability: Operates without internet connectivity.</li>
+                <li>Secure Local Storage: All student records are stored encrypted on-device.</li>
+                <li>Comprehensive Student Profiles: Track grades, attendance, and continuous assessment.</li>
+                <li>Standardized Report Card Generation: Produces printable terminal academic transcripts.</li>
+                <li>Data Portability: Export and backup database snapshots locally.</li>
             </ul>
         </div>
 
         <div class="footer">
-            <p><strong>HOPA School Reports</strong></p>
-            <p>Version 1.0.0 | Android</p>
-            <p style="margin-top: 10px;">
-                <a href="https://huighlet.github.io/hopa-privacy-policy/privacy-policy.html" 
-                   style="color: #667eea; text-decoration: none;">
-                    Privacy Policy
-                </a>
+            <p><strong>HOPA School Reports</strong> - Version 1.0.0</p>
+            <p style="margin-top: 8px;">
+                <a href="https://huighlet.github.io/hopa-privacy-policy/privacy-policy.html">Privacy Policy</a>
             </p>
         </div>
     </div>
 </body>
 </html>
-
